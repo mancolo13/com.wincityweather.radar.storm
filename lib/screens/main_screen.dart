@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.radar_outlined),
-          selectedIcon: const Icon(Icons.radar, color: AppTheme.primaryColor),
-          label: 'Radar',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.schedule_outlined),
-          selectedIcon: const Icon(Icons.schedule, color: AppTheme.primaryColor),
-          label: 'Hourly',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.calendar_today_outlined),
-          selectedIcon: const Icon(Icons.calendar_today, color: AppTheme.primaryColor),
-          label: 'Daily',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.warning_amber_outlined),
-          selectedIcon: const Icon(Icons.warning, color: AppTheme.primaryColor),
-          label: 'Alerts',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.wb_sunny_outlined),
+            selectedIcon: const Icon(Icons.wb_sunny, color: AppTheme.primaryColor),
+            label: 'Current',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.calendar_today_outlined),
+            selectedIcon: const Icon(Icons.calendar_today, color: AppTheme.primaryColor),
+            label: '7-Day',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.radar_outlined),
+            selectedIcon: const Icon(Icons.radar, color: AppTheme.primaryColor),
+            label: 'Doppler',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.location_city_outlined),
+            selectedIcon: const Icon(Icons.location_city, color: AppTheme.primaryColor),
+            label: 'Cities',
+          ),
         ],
       ),
     );
